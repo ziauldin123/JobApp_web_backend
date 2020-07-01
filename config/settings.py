@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '=(is($t6b70633m^m&hqt)9!(-y=d2pvkf59qt#*c2x@*va%zp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 
 # Application definition
@@ -126,8 +126,16 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
+
+SECURE_REFERRER_POLICY = 'origin'
+SECURE_HSTS_PRELOAD = True
+SESSION_COOKIE_SECURE = True
+SECURE_SSL_REDIRECT = True
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+SECURE_HSTS_SECONDS = 60
+CSRF_COOKIE_SECURE = True
 CORS_ORIGIN_ALLOW_ALL = True
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://job-web-api.herokuapp.com/','job-web-api.herokuapp.com','job-web-api.herokuapp']
 
 CORS_ALLOW_METHODS = (
     'DELETE',
