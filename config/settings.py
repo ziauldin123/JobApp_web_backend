@@ -25,8 +25,6 @@ SECRET_KEY = '=(is($t6b70633m^m&hqt)9!(-y=d2pvkf59qt#*c2x@*va%zp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
 
 # Application definition
 
