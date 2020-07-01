@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
-
+import django_heroku
 import os
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", __file__)
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -161,3 +161,5 @@ CORS_ALLOW_HEADERS = (
 STATIC_URL = '/static/'
 MEDIA_ROOT = 'media'
 MEDIA_URL = '/media/'
+
+django_heroku.settings(locals())
