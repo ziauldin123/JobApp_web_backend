@@ -1,1 +1,1 @@
-web: gunicorn JobsApi.wsgi
+web: gunicorn config.wsgi
