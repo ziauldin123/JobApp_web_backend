@@ -136,7 +136,7 @@ USE_TZ = True
 # SECURE_HSTS_SECONDS = 60
 # CSRF_COOKIE_SECURE = True
 CORS_ORIGIN_ALLOW_ALL = True
-ALLOWED_HOSTS = ['https://job-web-api.herokuapp.com/','job-web-api.herokuapp.com','job-web-api.herokuapp']
+ALLOWED_HOSTS = ['*']
 
 CORS_ALLOW_METHODS = (
     'DELETE',
